@@ -17,8 +17,13 @@
     clear: both;
   } */
 h1 {
-    text-align: left;
+    text-align: center;
     padding: 2rem;
+}
+
+h2 {
+    text-algn: left;
+    padding:2rem;
 }
 
 .nav {

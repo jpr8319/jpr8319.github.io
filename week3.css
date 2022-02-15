@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 35%;
+    padding: 10px;
+    height: 400px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+h1 {
+    text-align: left;
+    padding: 2rem;
+}
+
+.nav {
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 1.5rem;
+}
+.navlink {
+    text-decoration: none;
+    font-size: 20px;      
+}
+
+.containermain {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: lightgray;
+}
+
+.left {
+    background-color: brown;
+    padding: 3rem;
+    margin: auto;
+}
+
+.right {
+    background-color:bisque;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+.photo {
+    width: 300px;
+}
+
+.contactinfo {
+    
+}
+  /* this targets TABLETS */ 
+@media screen and (max-width: 1000px) {
+    /* remove check out this video to learn more about us */
+    .photo {
+        display:none;
+        }
+    body {
+        background-color:bisque;
+        }
+        .containermain {
+            grid-template-columns: 1fr ;
+            }   
+    }
+    
+    /* this targets PHONES */ 
+    @media screen and (max-width: 640px)  {
+        body {
+            background-color: lightgray;
+        }
+        .right {
+              display:none;
+        }
+    } 
+    
+    /* this targets DESKTOPS */ 
+    @media screen and (min-width: 1024px) {
+        body{
+            background-color: whitesmoke;
+        }
+    }  
